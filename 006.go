@@ -12,9 +12,7 @@ func main() {
 		return
 	}
 
-	if (num != 0) {
-		fmt.Println("not zero")
-	} else {
+	if (num == 0) {
 		fmt.Println("zero")
 	}
 }
