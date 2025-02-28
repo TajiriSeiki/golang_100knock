@@ -11,14 +11,11 @@ func main() {
 		fmt.Println("エラーが発生しました:", err)
 		return
 	}
-	switch num1 {
-	case 1:
-		fmt.Println("one")
-	case 2:
-		fmt.Println("two")
-	case 3:
-		fmt.Println("three")
-	default:
-		fmt.Println("others")
+	if num1 < -10 {
+		fmt.Println("range 1")
+	} else if (num1 >= -10) && (num1 < 0) {
+		fmt.Println("range 2")
+	} else {
+		fmt.Println("range 3")
 	}
 }
