@@ -6,7 +6,7 @@ func main() {
 	var num [5]int
 
 	for i:=0; i < len(num); i++ {
-		fmt.Print("input number: ")
+		fmt.Printf("input data[%d]: ", i)
 		_, err := fmt.Scanln(&num[i])
 		if err != nil {
 			fmt.Println("エラーが発生しました:", err)
